@@ -8,7 +8,7 @@ const JWT_SECRET = process.env.JWT_SECRET || 'your_jwt_secret_key'; // Secret ke
 const login = async (req, res) => {
     try {
         const { username, password } = req.body;
-
+        console.log(req.body);
         // Find the user in the database using Mongoose
         const user = await User.findOne({ username });
         

@@ -7,7 +7,7 @@ const connectDB=require('./db')
 dotenv.config();
 
 
-connectDB();
+// connectDB();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 app.use(cors())
